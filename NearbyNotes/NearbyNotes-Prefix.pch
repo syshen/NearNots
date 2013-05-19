@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'NearbyNotes' target in the 'NearbyNotes' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+#endif
+
+#import "SSDefines.h"
+#import <Evernote-SDK-iOS/EvernoteSDK.h>
+#import <MagicalRecord/CoreData+MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <BlocksKit/BlocksKit.h>

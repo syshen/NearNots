@@ -1,0 +1,23 @@
+
+PODS:
+- BlocksKit (1.8.1):
+  - libffi
+- Evernote-SDK-iOS (1.1.1):
+  - SSKeychain (= 0.2.1)
+- MagicalRecord (2.1)
+- SSKeychain (0.2.1)
+- libffi (3.0.11)
+
+DEPENDENCIES:
+- BlocksKit
+- Evernote-SDK-iOS
+- MagicalRecord
+
+SPEC CHECKSUMS:
+  BlocksKit: 18102744fd7c44b54f1e54ce6ffe9258bcb5df81
+  Evernote-SDK-iOS: 8660ee2442866de83aaf490a45550b056c2f4f67
+  MagicalRecord: 64e7184c240087a45e9588a722eaf05b0ad837f7
+  SSKeychain: ffa1a79eb716d9ed1ca184fb0cf218087ca28486
+  libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
+
+COCOAPODS: 0.16.0

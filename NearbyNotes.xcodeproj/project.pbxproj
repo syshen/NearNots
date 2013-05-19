@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		666CEE6A90FE4F39B5A307A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE59779CA69460DAB8993B9 /* libPods.a */; };
+		800095EB1720E87E0082E1B5 /* SSEvernoteLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800095E91720E87E0082E1B5 /* SSEvernoteLoginViewController.m */; };
+		800095EC1720E87E0082E1B5 /* SSEvernoteLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800095EA1720E87E0082E1B5 /* SSEvernoteLoginViewController.xib */; };
+		8007DB3717217A4100FF2859 /* SSNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8007DB3617217A4100FF2859 /* SSNotesViewController.m */; };
+		8007DB3A17217F1A00FF2859 /* SSNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8007DB3917217F1A00FF2859 /* SSNoteViewController.m */; };
+		8007DB3D172196C700FF2859 /* SSNoteInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8007DB3C172196C700FF2859 /* SSNoteInfoViewController.m */; };
+		8007DB3F17219E4600FF2859 /* SSNoteInfoCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8007DB3E17219E4600FF2859 /* SSNoteInfoCover.xib */; };
+		8007DB4217219E9300FF2859 /* SSNoteInfoCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8007DB4117219E9300FF2859 /* SSNoteInfoCover.m */; };
+		8007DB4417219EDD00FF2859 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8007DB4317219EDD00FF2859 /* MapKit.framework */; };
+		8007DB4617219EE600FF2859 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8007DB4517219EE600FF2859 /* QuartzCore.framework */; };
+		803EEB851720E48400A1CA8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803EEB841720E48400A1CA8B /* UIKit.framework */; };
+		803EEB871720E48400A1CA8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803EEB861720E48400A1CA8B /* Foundation.framework */; };
+		803EEB891720E48400A1CA8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803EEB881720E48400A1CA8B /* CoreGraphics.framework */; };
+		803EEB8F1720E48400A1CA8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 803EEB8D1720E48400A1CA8B /* InfoPlist.strings */; };
+		803EEB911720E48400A1CA8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 803EEB901720E48400A1CA8B /* main.m */; };
+		803EEB951720E48400A1CA8B /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803EEB941720E48400A1CA8B /* SSAppDelegate.m */; };
+		803EEB971720E48400A1CA8B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 803EEB961720E48400A1CA8B /* Default.png */; };
+		803EEB991720E48400A1CA8B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 803EEB981720E48400A1CA8B /* Default@2x.png */; };
+		803EEB9B1720E48400A1CA8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 803EEB9A1720E48400A1CA8B /* Default-568h@2x.png */; };
+		803EEB9E1720E48400A1CA8B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803EEB9C1720E48400A1CA8B /* MainStoryboard.storyboard */; };
+		803EEBA11720E48400A1CA8B /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803EEBA01720E48400A1CA8B /* SSViewController.m */; };
+		803EEBA91720E60D00A1CA8B /* SSNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803EEBA81720E60D00A1CA8B /* SSNotebooksViewController.m */; };
+		803EEBAC1720E6B400A1CA8B /* SSNearbyNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803EEBAB1720E6B400A1CA8B /* SSNearbyNotesViewController.m */; };
+		809EEF101722B0960090567E /* SSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 809EEF0F1722B0960090567E /* SSNote.m */; };
+		809EEF131722B0A70090567E /* SSNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 809EEF121722B0A70090567E /* SSNotebook.m */; };
+		809EEF161722B2360090567E /* SSTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 809EEF151722B2360090567E /* SSTag.m */; };
+		809EEF1C17239A8E0090567E /* Haversine.m in Sources */ = {isa = PBXBuildFile; fileRef = 809EEF1B17239A8E0090567E /* Haversine.m */; };
+		80ADAD1C17222F3500D8F8E3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80ADAD1B17222F3500D8F8E3 /* CoreLocation.framework */; };
+		80ADAD1F1722649600D8F8E3 /* SSDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ADAD1E1722649600D8F8E3 /* SSDefines.m */; };
+		80ADAD221722651F00D8F8E3 /* SSENSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ADAD211722651F00D8F8E3 /* SSENSyncManager.m */; };
+		80ADAD261722A62400D8F8E3 /* SSNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80ADAD241722A62400D8F8E3 /* SSNotes.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DE59779CA69460DAB8993B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		800095E81720E87E0082E1B5 /* SSEvernoteLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEvernoteLoginViewController.h; sourceTree = "<group>"; };
+		800095E91720E87E0082E1B5 /* SSEvernoteLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSEvernoteLoginViewController.m; sourceTree = "<group>"; };
+		800095EA1720E87E0082E1B5 /* SSEvernoteLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSEvernoteLoginViewController.xib; sourceTree = "<group>"; };
+		8007DB3517217A4100FF2859 /* SSNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNotesViewController.h; sourceTree = "<group>"; };
+		8007DB3617217A4100FF2859 /* SSNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNotesViewController.m; sourceTree = "<group>"; };
+		8007DB3817217F1A00FF2859 /* SSNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNoteViewController.h; sourceTree = "<group>"; };
+		8007DB3917217F1A00FF2859 /* SSNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNoteViewController.m; sourceTree = "<group>"; };
+		8007DB3B172196C700FF2859 /* SSNoteInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNoteInfoViewController.h; sourceTree = "<group>"; };
+		8007DB3C172196C700FF2859 /* SSNoteInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNoteInfoViewController.m; sourceTree = "<group>"; };
+		8007DB3E17219E4600FF2859 /* SSNoteInfoCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSNoteInfoCover.xib; sourceTree = "<group>"; };
+		8007DB4017219E9300FF2859 /* SSNoteInfoCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNoteInfoCover.h; sourceTree = "<group>"; };
+		8007DB4117219E9300FF2859 /* SSNoteInfoCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNoteInfoCover.m; sourceTree = "<group>"; };
+		8007DB4317219EDD00FF2859 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8007DB4517219EE600FF2859 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		803EEB811720E48400A1CA8B /* NearbyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803EEB841720E48400A1CA8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		803EEB861720E48400A1CA8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		803EEB881720E48400A1CA8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		803EEB8C1720E48400A1CA8B /* NearbyNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearbyNotes-Info.plist"; sourceTree = "<group>"; };
+		803EEB8E1720E48400A1CA8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		803EEB901720E48400A1CA8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		803EEB921720E48400A1CA8B /* NearbyNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NearbyNotes-Prefix.pch"; sourceTree = "<group>"; };
+		803EEB931720E48400A1CA8B /* SSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
+		803EEB941720E48400A1CA8B /* SSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
+		803EEB961720E48400A1CA8B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		803EEB981720E48400A1CA8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		803EEB9A1720E48400A1CA8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		803EEB9D1720E48400A1CA8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		803EEB9F1720E48400A1CA8B /* SSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSViewController.h; sourceTree = "<group>"; };
+		803EEBA01720E48400A1CA8B /* SSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
+		803EEBA71720E60D00A1CA8B /* SSNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNotebooksViewController.h; sourceTree = "<group>"; };
+		803EEBA81720E60D00A1CA8B /* SSNotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNotebooksViewController.m; sourceTree = "<group>"; };
+		803EEBAA1720E6B400A1CA8B /* SSNearbyNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNearbyNotesViewController.h; sourceTree = "<group>"; };
+		803EEBAB1720E6B400A1CA8B /* SSNearbyNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNearbyNotesViewController.m; sourceTree = "<group>"; };
+		809EEF0E1722B0960090567E /* SSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNote.h; sourceTree = "<group>"; };
+		809EEF0F1722B0960090567E /* SSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNote.m; sourceTree = "<group>"; };
+		809EEF111722B0A70090567E /* SSNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNotebook.h; sourceTree = "<group>"; };
+		809EEF121722B0A70090567E /* SSNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNotebook.m; sourceTree = "<group>"; };
+		809EEF141722B2360090567E /* SSTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTag.h; sourceTree = "<group>"; };
+		809EEF151722B2360090567E /* SSTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTag.m; sourceTree = "<group>"; };
+		809EEF1A17239A8D0090567E /* Haversine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Haversine.h; sourceTree = "<group>"; };
+		809EEF1B17239A8E0090567E /* Haversine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Haversine.m; sourceTree = "<group>"; };
+		80ADAD1B17222F3500D8F8E3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		80ADAD1D1722649600D8F8E3 /* SSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDefines.h; sourceTree = "<group>"; };
+		80ADAD1E1722649600D8F8E3 /* SSDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDefines.m; sourceTree = "<group>"; };
+		80ADAD201722651E00D8F8E3 /* SSENSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSENSyncManager.h; sourceTree = "<group>"; };
+		80ADAD211722651F00D8F8E3 /* SSENSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSENSyncManager.m; sourceTree = "<group>"; };
+		80ADAD251722A62400D8F8E3 /* SSNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SSNotes.xcdatamodel; sourceTree = "<group>"; };
+		F63232B8395545EBBE9408C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803EEB7E1720E48400A1CA8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80ADAD1C17222F3500D8F8E3 /* CoreLocation.framework in Frameworks */,
+				8007DB4617219EE600FF2859 /* QuartzCore.framework in Frameworks */,
+				8007DB4417219EDD00FF2859 /* MapKit.framework in Frameworks */,
+				803EEB851720E48400A1CA8B /* UIKit.framework in Frameworks */,
+				803EEB871720E48400A1CA8B /* Foundation.framework in Frameworks */,
+				803EEB891720E48400A1CA8B /* CoreGraphics.framework in Frameworks */,
+				666CEE6A90FE4F39B5A307A8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		803EEB781720E48400A1CA8B = {
+			isa = PBXGroup;
+			children = (
+				80ADAD1B17222F3500D8F8E3 /* CoreLocation.framework */,
+				8007DB4517219EE600FF2859 /* QuartzCore.framework */,
+				8007DB4317219EDD00FF2859 /* MapKit.framework */,
+				803EEB8A1720E48400A1CA8B /* NearbyNotes */,
+				803EEB831720E48400A1CA8B /* Frameworks */,
+				803EEB821720E48400A1CA8B /* Products */,
+				F63232B8395545EBBE9408C7 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		803EEB821720E48400A1CA8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803EEB811720E48400A1CA8B /* NearbyNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803EEB831720E48400A1CA8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				803EEB841720E48400A1CA8B /* UIKit.framework */,
+				803EEB861720E48400A1CA8B /* Foundation.framework */,
+				803EEB881720E48400A1CA8B /* CoreGraphics.framework */,
+				5DE59779CA69460DAB8993B9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		803EEB8A1720E48400A1CA8B /* NearbyNotes */ = {
+			isa = PBXGroup;
+			children = (
+				80ADAD231722A5F100D8F8E3 /* Model */,
+				80ADAD1D1722649600D8F8E3 /* SSDefines.h */,
+				80ADAD1E1722649600D8F8E3 /* SSDefines.m */,
+				803EEB931720E48400A1CA8B /* SSAppDelegate.h */,
+				803EEB941720E48400A1CA8B /* SSAppDelegate.m */,
+				80ADAD201722651E00D8F8E3 /* SSENSyncManager.h */,
+				80ADAD211722651F00D8F8E3 /* SSENSyncManager.m */,
+				803EEB9C1720E48400A1CA8B /* MainStoryboard.storyboard */,
+				803EEBA71720E60D00A1CA8B /* SSNotebooksViewController.h */,
+				803EEBA81720E60D00A1CA8B /* SSNotebooksViewController.m */,
+				8007DB3517217A4100FF2859 /* SSNotesViewController.h */,
+				8007DB3617217A4100FF2859 /* SSNotesViewController.m */,
+				8007DB3817217F1A00FF2859 /* SSNoteViewController.h */,
+				8007DB3917217F1A00FF2859 /* SSNoteViewController.m */,
+				8007DB3B172196C700FF2859 /* SSNoteInfoViewController.h */,
+				8007DB3C172196C700FF2859 /* SSNoteInfoViewController.m */,
+				8007DB3E17219E4600FF2859 /* SSNoteInfoCover.xib */,
+				8007DB4017219E9300FF2859 /* SSNoteInfoCover.h */,
+				8007DB4117219E9300FF2859 /* SSNoteInfoCover.m */,
+				800095E81720E87E0082E1B5 /* SSEvernoteLoginViewController.h */,
+				800095E91720E87E0082E1B5 /* SSEvernoteLoginViewController.m */,
+				800095EA1720E87E0082E1B5 /* SSEvernoteLoginViewController.xib */,
+				803EEBAA1720E6B400A1CA8B /* SSNearbyNotesViewController.h */,
+				803EEBAB1720E6B400A1CA8B /* SSNearbyNotesViewController.m */,
+				809EEF1A17239A8D0090567E /* Haversine.h */,
+				809EEF1B17239A8E0090567E /* Haversine.m */,
+				803EEB9F1720E48400A1CA8B /* SSViewController.h */,
+				803EEBA01720E48400A1CA8B /* SSViewController.m */,
+				803EEB8B1720E48400A1CA8B /* Supporting Files */,
+			);
+			path = NearbyNotes;
+			sourceTree = "<group>";
+		};
+		803EEB8B1720E48400A1CA8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				803EEB8C1720E48400A1CA8B /* NearbyNotes-Info.plist */,
+				803EEB8D1720E48400A1CA8B /* InfoPlist.strings */,
+				803EEB901720E48400A1CA8B /* main.m */,
+				803EEB921720E48400A1CA8B /* NearbyNotes-Prefix.pch */,
+				803EEB961720E48400A1CA8B /* Default.png */,
+				803EEB981720E48400A1CA8B /* Default@2x.png */,
+				803EEB9A1720E48400A1CA8B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80ADAD231722A5F100D8F8E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80ADAD241722A62400D8F8E3 /* SSNotes.xcdatamodeld */,
+				809EEF141722B2360090567E /* SSTag.h */,
+				809EEF151722B2360090567E /* SSTag.m */,
+				809EEF111722B0A70090567E /* SSNotebook.h */,
+				809EEF121722B0A70090567E /* SSNotebook.m */,
+				809EEF0E1722B0960090567E /* SSNote.h */,
+				809EEF0F1722B0960090567E /* SSNote.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803EEB801720E48400A1CA8B /* NearbyNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803EEBA41720E48400A1CA8B /* Build configuration list for PBXNativeTarget "NearbyNotes" */;
+			buildPhases = (
+				803EEB7D1720E48400A1CA8B /* Sources */,
+				803EEB7E1720E48400A1CA8B /* Frameworks */,
+				803EEB7F1720E48400A1CA8B /* Resources */,
+				D8376A22E87E4C839D25E4E6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyNotes;
+			productName = NearbyNotes;
+			productReference = 803EEB811720E48400A1CA8B /* NearbyNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803EEB791720E48400A1CA8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = syshen;
+			};
+			buildConfigurationList = 803EEB7C1720E48400A1CA8B /* Build configuration list for PBXProject "NearbyNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 803EEB781720E48400A1CA8B;
+			productRefGroup = 803EEB821720E48400A1CA8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803EEB801720E48400A1CA8B /* NearbyNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803EEB7F1720E48400A1CA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803EEB8F1720E48400A1CA8B /* InfoPlist.strings in Resources */,
+				803EEB971720E48400A1CA8B /* Default.png in Resources */,
+				803EEB991720E48400A1CA8B /* Default@2x.png in Resources */,
+				803EEB9B1720E48400A1CA8B /* Default-568h@2x.png in Resources */,
+				803EEB9E1720E48400A1CA8B /* MainStoryboard.storyboard in Resources */,
+				800095EC1720E87E0082E1B5 /* SSEvernoteLoginViewController.xib in Resources */,
+				8007DB3F17219E4600FF2859 /* SSNoteInfoCover.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8376A22E87E4C839D25E4E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803EEB7D1720E48400A1CA8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803EEB911720E48400A1CA8B /* main.m in Sources */,
+				803EEB951720E48400A1CA8B /* SSAppDelegate.m in Sources */,
+				803EEBA11720E48400A1CA8B /* SSViewController.m in Sources */,
+				803EEBA91720E60D00A1CA8B /* SSNotebooksViewController.m in Sources */,
+				803EEBAC1720E6B400A1CA8B /* SSNearbyNotesViewController.m in Sources */,
+				800095EB1720E87E0082E1B5 /* SSEvernoteLoginViewController.m in Sources */,
+				8007DB3717217A4100FF2859 /* SSNotesViewController.m in Sources */,
+				8007DB3A17217F1A00FF2859 /* SSNoteViewController.m in Sources */,
+				8007DB3D172196C700FF2859 /* SSNoteInfoViewController.m in Sources */,
+				8007DB4217219E9300FF2859 /* SSNoteInfoCover.m in Sources */,
+				80ADAD1F1722649600D8F8E3 /* SSDefines.m in Sources */,
+				80ADAD221722651F00D8F8E3 /* SSENSyncManager.m in Sources */,
+				80ADAD261722A62400D8F8E3 /* SSNotes.xcdatamodeld in Sources */,
+				809EEF101722B0960090567E /* SSNote.m in Sources */,
+				809EEF131722B0A70090567E /* SSNotebook.m in Sources */,
+				809EEF161722B2360090567E /* SSTag.m in Sources */,
+				809EEF1C17239A8E0090567E /* Haversine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		803EEB8D1720E48400A1CA8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803EEB8E1720E48400A1CA8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		803EEB9C1720E48400A1CA8B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803EEB9D1720E48400A1CA8B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		803EEBA21720E48400A1CA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		803EEBA31720E48400A1CA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803EEBA51720E48400A1CA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63232B8395545EBBE9408C7 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyNotes/NearbyNotes-Prefix.pch";
+				INFOPLIST_FILE = "NearbyNotes/NearbyNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		803EEBA61720E48400A1CA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63232B8395545EBBE9408C7 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyNotes/NearbyNotes-Prefix.pch";
+				INFOPLIST_FILE = "NearbyNotes/NearbyNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803EEB7C1720E48400A1CA8B /* Build configuration list for PBXProject "NearbyNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803EEBA21720E48400A1CA8B /* Debug */,
+				803EEBA31720E48400A1CA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803EEBA41720E48400A1CA8B /* Build configuration list for PBXNativeTarget "NearbyNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803EEBA51720E48400A1CA8B /* Debug */,
+				803EEBA61720E48400A1CA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80ADAD241722A62400D8F8E3 /* SSNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80ADAD251722A62400D8F8E3 /* SSNotes.xcdatamodel */,
+			);
+			currentVersion = 80ADAD251722A62400D8F8E3 /* SSNotes.xcdatamodel */;
+			path = SSNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 803EEB791720E48400A1CA8B /* Project object */;
+}

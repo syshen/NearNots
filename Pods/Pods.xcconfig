@@ -1,0 +1,7 @@
+ALWAYS_SEARCH_USER_PATHS = YES
+OTHER_LDFLAGS = -ObjC -Wl,-no_compact_unwind -framework CoreData -framework Foundation -framework MessageUI -framework Security -framework StoreKit
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/BlocksKit" "${PODS_ROOT}/BuildHeaders/Evernote-SDK-iOS" "${PODS_ROOT}/BuildHeaders/MagicalRecord" "${PODS_ROOT}/BuildHeaders/SSKeychain" "${PODS_ROOT}/BuildHeaders/libffi"
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/Evernote-SDK-iOS" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/SSKeychain" "${PODS_ROOT}/Headers/libffi"
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}

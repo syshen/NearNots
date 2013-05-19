@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qAA-vP-ui7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DkX-It-z9r">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="5dE-mx-i7R" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D6r-aM-CbG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UPd-bE-6Kf" kind="relationship" relationship="rootViewController" id="xbV-US-Fho"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wn-PM-zV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3137" y="-746"/>
+        </scene>
+        <!--Note Info View Controller - Note Details-->
+        <scene sceneID="46f-Jw-Yp6">
+            <objects>
+                <viewController id="UPd-bE-6Kf" customClass="SSNoteInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BTZ-5i-QvH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-dE-f46">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="UPd-bE-6Kf" id="d1C-dI-a0W"/>
+                                    <outlet property="delegate" destination="UPd-bE-6Kf" id="1Oi-aB-7cu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4WZ-dE-f46" firstAttribute="bottom" secondItem="BTZ-5i-QvH" secondAttribute="bottom" type="default" id="1rm-V3-DyX"/>
+                            <constraint firstItem="4WZ-dE-f46" firstAttribute="top" secondItem="BTZ-5i-QvH" secondAttribute="top" type="default" id="85S-Kh-HaY"/>
+                            <constraint firstItem="4WZ-dE-f46" firstAttribute="leading" secondItem="BTZ-5i-QvH" secondAttribute="leading" type="default" id="ehT-7e-owb"/>
+                            <constraint firstItem="4WZ-dE-f46" firstAttribute="trailing" secondItem="BTZ-5i-QvH" secondAttribute="trailing" type="default" id="yMN-1f-iYx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Note Details" id="eA8-jf-eLF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="sWL-Hw-dW0">
+                            <connections>
+                                <action selector="closeButtonDidTap:" destination="UPd-bE-6Kf" id="JRH-9x-IbF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="4WZ-dE-f46" id="KUl-kS-lKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQN-Um-Ynl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3677" y="-746"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="L3J-Qn-gt2">
+            <objects>
+                <viewController id="GNb-iP-k0M" customClass="SSNoteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ua1-NS-uFa">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5n-Jm-DgK">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W5n-Jm-DgK" firstAttribute="trailing" secondItem="Ua1-NS-uFa" secondAttribute="trailing" type="default" id="BQK-he-CPX"/>
+                            <constraint firstItem="W5n-Jm-DgK" firstAttribute="top" secondItem="Ua1-NS-uFa" secondAttribute="top" type="default" id="Lmd-DG-F6f"/>
+                            <constraint firstItem="W5n-Jm-DgK" firstAttribute="leading" secondItem="Ua1-NS-uFa" secondAttribute="leading" type="default" id="Pf8-Dd-68d"/>
+                            <constraint firstItem="W5n-Jm-DgK" firstAttribute="bottom" secondItem="Ua1-NS-uFa" secondAttribute="bottom" type="default" id="mOS-eL-lDb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDP-36-rey">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="1Mo-bd-Wef">
+                            <connections>
+                                <segue destination="5dE-mx-i7R" kind="modal" identifier="NoteInfo" modalTransitionStyle="flipHorizontal" id="aKn-Pe-7xm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="W5n-Jm-DgK" id="dyw-vW-lsj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRZ-s4-nKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2619" y="-736"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="Tni-Uy-7Zp">
+            <objects>
+                <tableViewController id="IXE-Tf-U3r" customClass="SSNotesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Tpt-r9-OCo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoteCell" id="t2I-G3-buZ">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="GNb-iP-k0M" kind="push" identifier="NoteDetail" id="nPe-hW-p9e"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IXE-Tf-U3r" id="LBM-OB-pym"/>
+                            <outlet property="delegate" destination="IXE-Tf-U3r" id="0NK-ka-vig"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NjH-Wd-RGL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8LU-pW-eV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2121" y="-728"/>
+        </scene>
+        <!--Notebooks View Controller - All Notebooks-->
+        <scene sceneID="Ewx-mT-ZPE">
+            <objects>
+                <tableViewController id="Be4-0B-PIw" customClass="SSNotebooksViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="45K-3Y-DUo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NotebookCell" id="sZm-RJ-uMj">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="IXE-Tf-U3r" kind="push" identifier="NotesList" id="OJx-pL-6JT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Be4-0B-PIw" id="6J3-tB-zqT"/>
+                            <outlet property="delegate" destination="Be4-0B-PIw" id="JSX-Qm-CSH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Notebooks" id="Wap-rW-pKf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQv-zy-xS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="-728"/>
+        </scene>
+        <!--Navigation Controller - Notebooks-->
+        <scene sceneID="1af-P4-qdX">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="oq6-3E-yW8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notebooks" id="ALU-M5-uH6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kb5-gB-PpI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Be4-0B-PIw" kind="relationship" relationship="rootViewController" id="XFl-aw-CX5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuD-nw-54t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-728"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="skQ-iT-bph">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="qAA-vP-ui7" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rKE-h2-fNi">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oq6-3E-yW8" kind="relationship" relationship="viewControllers" id="ilp-eB-1uX"/>
+                        <segue destination="grw-cG-9W0" kind="relationship" relationship="viewControllers" id="57g-uj-Mnc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYA-dD-mMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="-396"/>
+        </scene>
+        <!--Nearby Notes View Controller - Nearby Notes-->
+        <scene sceneID="HhA-er-7WA">
+            <objects>
+                <tableViewController id="BQu-ph-JVU" customClass="SSNearbyNotesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QRg-Cb-w7j">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NearByCell" textLabel="S3x-Cg-3jZ" detailTextLabel="rQ6-6t-5af" style="IBUITableViewCellStyleValue1" id="Dlh-Il-htl">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3x-Cg-3jZ">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ6-6t-5af">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="GNb-iP-k0M" kind="push" identifier="NoteDetail" id="70u-Yf-UWO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Nearby Notes" id="c8K-Gh-7T2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrA-qa-gt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608" y="-28"/>
+        </scene>
+        <!--Navigation Controller - Nearby-->
+        <scene sceneID="Qys-X9-TI4">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="grw-cG-9W0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nearby" id="Tfl-h0-vb2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2gl-js-e2F">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BQu-ph-JVU" kind="relationship" relationship="rootViewController" id="a5c-HJ-3k4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ct-vC-6AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="-28"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SSNearbyNotesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSNearbyNotesViewController.h"/>
+        </class>
+        <class className="SSNoteInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSNoteInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="SSNoteViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSNoteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SSNotebooksViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSNotebooksViewController.h"/>
+        </class>
+        <class className="SSNotesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSNotesViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="70u-Yf-UWO"/>
+    </inferredMetricsTieBreakers>
+</document>

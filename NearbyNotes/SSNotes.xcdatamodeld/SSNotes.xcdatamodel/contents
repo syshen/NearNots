@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SSNote" representedClassName="SSNote" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notebook" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SSNotebook" inverseName="notes" inverseEntity="SSNotebook" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SSTag" syncable="YES"/>
+    </entity>
+    <entity name="SSNotebook" representedClassName="SSNotebook" syncable="YES">
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SSNote" inverseName="notebook" inverseEntity="SSNote" syncable="YES"/>
+    </entity>
+    <entity name="SSTag" representedClassName="SSTag" syncable="YES">
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SSNote" positionX="81" positionY="309" width="128" height="150"/>
+        <element name="SSNotebook" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="SSTag" positionX="-54" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
